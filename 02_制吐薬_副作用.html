@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悪心・嘔吐 ② 制吐薬・副作用・化学療法</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0f4f8; color: #1a1a2e; font-size: 15px; }
+  .header { background: linear-gradient(135deg, #107c10, #0a5a0a); color: white; padding: 16px 20px; }
+  .header h1 { font-size: 18px; font-weight: bold; }
+  .header p { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+  .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 12px; padding: 2px 10px; font-size: 11px; margin-top: 6px; }
+  .knowledge-box { background: #fff; margin: 12px; border-radius: 12px; padding: 16px; border-left: 5px solid #107c10; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .knowledge-box h2 { font-size: 14px; color: #107c10; font-weight: bold; margin-bottom: 10px; }
+  .k-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  .k-table th { background: #107c10; color: white; padding: 6px 8px; text-align: left; }
+  .k-table td { padding: 6px 8px; border-bottom: 1px solid #e8e8e8; vertical-align: top; line-height: 1.6; }
+  .k-table tr:nth-child(even) td { background: #f0fff0; }
+  .point { background: #fff3e0; border-left: 4px solid #FF8C00; padding: 8px 12px; border-radius: 6px; margin-top: 10px; font-size: 12px; line-height: 1.6; }
+  .point strong { color: #c55a00; }
+  .section-title { text-align: center; font-size: 13px; color: #666; padding: 16px 0 4px; font-weight: bold; letter-spacing: 1px; }
+  .card { background: white; margin: 10px 12px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; }
+  .card-header { background: #107c10; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
+  .card-header .qnum { font-size: 12px; color: rgba(255,255,255,0.85); }
+  .card-header .qtag { font-size: 11px; background: rgba(255,255,255,0.25); color: white; border-radius: 10px; padding: 2px 8px; }
+  .card-body { padding: 14px; }
+  .question { font-size: 14px; line-height: 1.7; font-weight: bold; color: #1a1a2e; margin-bottom: 12px; }
+  .choices { list-style: none; }
+  .choices li { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f0f0f0; color: #333; line-height: 1.6; }
+  .choices li:last-child { border-bottom: none; }
+  .spacer { height: 32px; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 12px; letter-spacing: 2px; }
+  .answer-box { padding: 14px; background: #f0fff0; border-top: 3px solid #107c10; }
+  .correct { font-size: 16px; font-weight: bold; color: #c00000; margin-bottom: 12px; padding: 8px 12px; background: #ffe0e0; border-radius: 8px; }
+  .exp-item { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #d0e8d0; }
+  .exp-item:last-of-type { border-bottom: none; }
+  .choice-label { font-size: 13px; font-weight: bold; color: #333; }
+  .mark-ok { color: #107c10; }
+  .mark-ng { color: #c00000; }
+  .exp-text { font-size: 13px; color: #444; line-height: 1.7; margin-top: 4px; }
+  .summary { background: #d0ead0; border-radius: 8px; padding: 10px 12px; margin-top: 12px; font-size: 13px; color: #1b5e20; font-weight: bold; line-height: 1.6; }
+  .divider { margin: 20px 12px; border: none; border-top: 2px dashed #ccc; }
+  .footer { text-align: center; padding: 24px 20px; font-size: 12px; color: #aaa; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>悪心・嘔吐　② 制吐薬・副作用・化学療法</h1>
+  <p>緩和医療学会 認定登録医試験対策　金曜配信</p>
+  <span class="badge">★★★ 超頻出（8年連続）　全8問</span>
+</div>
+
+<div class="knowledge-box">
+  <h2>📚 まず覚える：制吐薬の副作用と使い分け</h2>
+  <table class="k-table">
+    <tr><th>薬剤</th><th>重要な副作用</th><th>ポイント</th></tr>
+    <tr><td>ドンペリドン</td><td><strong>心室性不整脈・QT延長</strong>（上室性ではない）</td><td>2022・2025で繰り返し出題</td></tr>
+    <tr><td>メトクロプラミド</td><td>錐体外路症状・遅発性ジスキネジア</td><td>完全腸閉塞では禁忌</td></tr>
+    <tr><td>オランザピン</td><td>高血糖・過鎮静・体重増加</td><td>遅発性嘔吐にも有効</td></tr>
+    <tr><td>5-HT3拮抗薬</td><td>便秘（腸管運動抑制）</td><td>急性嘔吐に有効</td></tr>
+    <tr><td>プロクロルペラジン</td><td>錐体外路症状・アカシジア</td><td>D2拮抗による</td></tr>
+  </table>
+  <div class="point"><strong>急性vs遅発性vs予期性：</strong>急性（24時間以内）→5-HT3拮抗薬。遅発性（24〜120時間後）→NK1拮抗薬・オランザピン。予期性→ベンゾジアゼピン系。</div>
+</div>
+
+<div class="section-title">── 問題 → スクロールして解答 ──</div>
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2018年 問25</span><span class="qtag">受容体の組み合わせ</span></div>
+  <div class="card-body">
+    <div class="question">制吐薬と拮抗する受容体で、適切でない組み合わせはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. オランザピン ― ヒスタミン受容体（H1）</li>
+      <li> B. ハロペリドール ― ドパミン受容体（D2）</li>
+      <li> C. モサプリド ― セロトニン受容体（5-HT4）</li>
+      <li> D. メトクロプラミド ― ムスカリン受容体（Achm）</li>
+      <li> E. ジフェンヒドラミン ― ムスカリン受容体（Achm）</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：D</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌（適切な組み合わせ）</span></span><div class="exp-text">オランザピンはH1を含む多受容体に拮抗する。正しい組み合わせ。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌（適切な組み合わせ）</span></span><div class="exp-text">ハロペリドール＝D2拮抗薬の代表。正しい組み合わせ。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌（適切な組み合わせ）</span></span><div class="exp-text">モサプリドは5-HT4受容体作動薬。消化管運動促進薬。正しい組み合わせ。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 不適切（正答）</span></span><div class="exp-text">メトクロプラミドの主作用はD2拮抗。ムスカリン受容体（Achm）への拮抗は主作用ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌（適切な組み合わせ）</span></span><div class="exp-text">ジフェンヒドラミンは抗コリン作用（Achm拮抗）を持つ。正しい組み合わせ。</div></div>
+    <div class="summary">メトクロプラミドの主作用はD2拮抗（＋5-HT4作動）。ムスカリン拮抗は誤り。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2021年 問B-41</span><span class="qtag">予期性嘔吐</span></div>
+  <div class="card-body">
+    <div class="question">化学療法の予期性悪心・嘔吐に対する治療について、正しいのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. 抗ヒスタミン薬</li>
+      <li> B. コルチコステロイド</li>
+      <li> C. ドパミンD2受容体拮抗薬</li>
+      <li> D. ベンゾジアゼピン系抗不安薬</li>
+      <li> E. セロトニン5-HT3受容体拮抗薬</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：D</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">抗ヒスタミン薬は体動時・前庭刺激による悪心に有効。予期性嘔吐（条件反射）には効果が低い。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">コルチコステロイドは頭蓋内圧亢進や遅発性嘔吐に有効。予期性嘔吐の主な治療ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">D2拮抗薬はCTZ刺激による悪心に有効。予期性嘔吐（心理的条件反射）には効果が低い。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">予期性嘔吐の本質は「不安・条件反射」。ベンゾジアゼピン系（ロラゼパム等）の抗不安・健忘作用が最も有効。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">5-HT3拮抗薬は化学療法による急性嘔吐に有効だが、予期性嘔吐（条件反射）には効果が低い。</div></div>
+    <div class="summary">予期性嘔吐＝不安・条件反射 → ベンゾジアゼピン系が第一選択。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2019年 問23</span><span class="qtag">オピオイド後の悪心</span></div>
+  <div class="card-body">
+    <div class="question">オキシコドン開始後から悪心・嘔吐がある。原因として最も可能性が低いのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. 便秘</li>
+      <li> B. オキシコドン</li>
+      <li> C. 予期性悪心嘔吐</li>
+      <li> D. 高カルシウム血症</li>
+      <li> E. 脳転移による脳圧亢進</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：C</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌（可能性あり）</span></span><div class="exp-text">オピオイドによる便秘→腸管内圧上昇→悪心。よくある原因。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌（可能性あり）</span></span><div class="exp-text">オキシコドン自体がCTZのD2受容体を刺激して悪心を引き起こす。最も多い原因。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 最も可能性が低い（正答）</span></span><div class="exp-text">予期性嘔吐は過去の化学療法などで強い悪心を経験した「記憶による条件反射」。オピオイド開始直後の原因としては最も考えにくい。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌（可能性あり）</span></span><div class="exp-text">高カルシウム血症はCTZを直接刺激して悪心を引き起こす。確認すべき原因。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌（可能性あり）</span></span><div class="exp-text">脳転移による頭蓋内圧亢進は嘔吐中枢を刺激する。除外すべき重要な原因。</div></div>
+    <div class="summary">オピオイド開始直後の悪心で「予期性嘔吐」は考えにくい。条件反射のため。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2019年 問31</span><span class="qtag">悪心・嘔吐の知識</span></div>
+  <div class="card-body">
+    <div class="question">悪心・嘔吐について誤っているのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. NK-1受容体拮抗薬は遅発性嘔吐に対して使用される。</li>
+      <li> B. 5HT3受容体拮抗薬は放射線治療に伴う悪心に有効である。</li>
+      <li> C. 抗がん剤による急性嘔吐は開始後24時間以内に消失する。</li>
+      <li> D. オピオイドの悪心に対する予防的な制吐薬投与は、高いレベルのエビデンスがある。</li>
+      <li> E. 高度催吐リスク化学療法にNK-1拮抗薬・ステロイド・5HT3拮抗薬の併用が推奨される。</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：D</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌（正しい）</span></span><div class="exp-text">NK-1拮抗薬は遅発性嘔吐（24〜120時間後）に特に有効。正しい記述。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌（正しい）</span></span><div class="exp-text">5-HT3拮抗薬は放射線治療に伴う悪心・嘔吐にも有効。正しい記述。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌（正しい）</span></span><div class="exp-text">急性嘔吐は投与後数時間以内に始まり24時間以内に消失する。正しい記述。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 誤り（正答）</span></span><div class="exp-text">オピオイド開始時の予防的制吐薬投与はエビデンスレベルが低く、全患者へのルーチン投与は推奨されていない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌（正しい）</span></span><div class="exp-text">高度催吐リスク化学療法にはNK-1拮抗薬＋ステロイド＋5-HT3拮抗薬（＋オランザピン）の多剤併用が推奨。正しい記述。</div></div>
+    <div class="summary">オピオイドの予防的制吐薬投与はエビデンスが低い。ルーチン投与は推奨されない。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2022年 問A-25</span><span class="qtag">制吐薬の知識</span></div>
+  <div class="card-body">
+    <div class="question">悪心・嘔吐に対して使用する薬剤に関する記述で正しいのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. 抗コリン薬はニコチン受容体に拮抗作用を示す。</li>
+      <li> B. オクトレオチドは消化管の内分泌・外分泌を亢進する。</li>
+      <li> C. デキサメタゾンの制吐作用は無作為化試験で認められている。</li>
+      <li> D. ヒスタミンH1受容体拮抗薬は、化学受容器引金帯（CTZ）に作用する。</li>
+      <li> E. セロトニン5-HT3受容体拮抗薬は、抗がん薬投与後の急性嘔吐に対して有効性が報告されている。</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：E（5番目の選択肢）</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">抗コリン薬はムスカリン受容体（Achm）に拮抗する。ニコチン受容体ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">オクトレオチドは消化管の内分泌・外分泌を「抑制」する。亢進ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">デキサメタゾンの制吐作用のメカニズムは不明。無作為化試験での評価は限定的。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">H1拮抗薬は前庭系・嘔吐中枢に作用する。CTZへの直接作用は主ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">5-HT3拮抗薬（グラニセトロン等）は抗がん剤後の急性嘔吐（24時間以内）に対して強いエビデンスがある標準治療薬。</div></div>
+    <div class="summary">5-HT3拮抗薬＝急性嘔吐の標準治療。オクトレオチドは分泌「抑制」。H1はCTZへの作用は主でない。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2022年 問B-26</span><span class="qtag">重症不整脈リスク</span></div>
+  <div class="card-body">
+    <div class="question">以下の制吐薬のうち、重症不整脈の危険性が最も高い薬剤はどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. オランザピン</li>
+      <li> B. ジフェンヒドラミン</li>
+      <li> C. デキサメタゾン</li>
+      <li> D. ドンペリドン</li>
+      <li> E. メトクロプラミド</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：D（4番目の選択肢）</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">オランザピンの主な副作用は高血糖・過鎮静。重症不整脈リスクは相対的に低い。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ジフェンヒドラミンの主な副作用は眠気・口渇。重症不整脈リスクは高くない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">デキサメタゾンの主な副作用は高血糖・感染リスク。重症不整脈リスクは高くない。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">ドンペリドンはQT延長・心室性不整脈のリスクが最も高い制吐薬。2004年FDAが使用禁止。EMAは用量・期間を制限。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">メトクロプラミドの副作用は錐体外路症状・遅発性ジスキネジア。重症不整脈リスクはドンペリドンより低い。</div></div>
+    <div class="summary">ドンペリドン＝QT延長・心室性不整脈リスクが最も高い制吐薬。次の問題とセットで覚える。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2024年 問B-24</span><span class="qtag">5-HT4受容体</span></div>
+  <div class="card-body">
+    <div class="question">以下の制吐薬のうち5-HT4受容体に作用するものはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> 1. アプレピタント</li>
+      <li> 2. ドンペリドン</li>
+      <li> 3. プロメタジン</li>
+      <li> 4. メトクロプラミド</li>
+      <li> 5. モサプリド</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：4, 5</div>
+    <div class="exp-item"><span class="choice-label"> 1. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">アプレピタント＝NK1受容体拮抗薬。5-HT4受容体には作用しない。</div></div>
+    <div class="exp-item"><span class="choice-label"> 2. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ドンペリドン＝D2受容体拮抗薬。5-HT4受容体への作用は主ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> 3. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">プロメタジン＝H1拮抗薬・抗コリン薬。5-HT4受容体には作用しない。</div></div>
+    <div class="exp-item"><span class="choice-label"> 4. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">メトクロプラミドはD2拮抗に加えて5-HT4受容体作動作用も持つ。消化管運動促進。</div></div>
+    <div class="exp-item"><span class="choice-label"> 5. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">モサプリドは選択的5-HT4受容体作動薬。消化管運動を促進する。</div></div>
+    <div class="summary">5-HT4作動薬：メトクロプラミド・モサプリド。消化管運動促進薬。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2025年 問A-26</span><span class="qtag">制吐薬と副作用</span></div>
+  <div class="card-body">
+    <div class="question">下記の制吐剤と副作用の組み合わせで、誤っているものはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> 1. オランザピン - 高血糖</li>
+      <li> 2. クロルプロマジン - 悪性症候群</li>
+      <li> 3. ジフェンヒドラミン/ジプロフィリン配合薬 - 眠気</li>
+      <li> 4. ドンペリドン - 上室性不整脈</li>
+      <li> 5. メトクロプラミド - 遅発性ジスキネジア</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：4</div>
+    <div class="exp-item"><span class="choice-label"> 1. <span class="mark-ng">❌（正しい組み合わせ）</span></span><div class="exp-text">オランザピン→高血糖は正しい。重大な副作用として記載。</div></div>
+    <div class="exp-item"><span class="choice-label"> 2. <span class="mark-ng">❌（正しい組み合わせ）</span></span><div class="exp-text">クロルプロマジン（定型抗精神病薬）→悪性症候群は正しい。</div></div>
+    <div class="exp-item"><span class="choice-label"> 3. <span class="mark-ng">❌（正しい組み合わせ）</span></span><div class="exp-text">ジフェンヒドラミン/ジプロフィリン配合薬（トラベルミン等）→眠気は正しい。</div></div>
+    <div class="exp-item"><span class="choice-label"> 4. <span class="mark-ok">✅ 誤り（正答）</span></span><div class="exp-text">ドンペリドンの不整脈は「心室性」（QT延長→トルサード・ド・ポアント）。「上室性不整脈」は誤り。前の問題（2022年）と合わせて覚える。</div></div>
+    <div class="exp-item"><span class="choice-label"> 5. <span class="mark-ng">❌（正しい組み合わせ）</span></span><div class="exp-text">メトクロプラミド長期使用→遅発性ジスキネジア（口周囲の不随意運動）は正しい。</div></div>
+    <div class="summary">ドンペリドンの不整脈は「心室性」。「上室性」は誤り。2022年・2025年と2回出題。</div>
+  </div>
+</div>
+
+<div class="footer">全8問　お疲れ様でした 🎓<br>月曜日に③腸閉塞・終末期腹水（5問）が届きます。<br>水曜の学習会でみんなで確認しましょう。</div>
+</body>
+</html>
