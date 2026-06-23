@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悪心・嘔吐 ① 受容体・催吐リスク</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0f4f8; color: #1a1a2e; }
+
+  .header { background: linear-gradient(135deg, #2E75B6, #1F3864); color: white; padding: 16px 20px; }
+  .header h1 { font-size: 18px; font-weight: bold; }
+  .header p { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+  .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 12px; padding: 2px 10px; font-size: 11px; margin-top: 6px; }
+
+  .knowledge-box { background: #fff; margin: 12px; border-radius: 12px; padding: 16px; border-left: 5px solid #2E75B6; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .knowledge-box h2 { font-size: 14px; color: #2E75B6; font-weight: bold; margin-bottom: 10px; }
+  .knowledge-box p { font-size: 13px; line-height: 1.7; color: #333; margin-bottom: 8px; }
+  .k-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  .k-table th { background: #2E75B6; color: white; padding: 6px 8px; text-align: left; }
+  .k-table td { padding: 6px 8px; border-bottom: 1px solid #e8e8e8; vertical-align: top; }
+  .k-table tr:nth-child(even) td { background: #f5f9ff; }
+  .point { background: #fff3e0; border-left: 4px solid #FF8C00; padding: 8px 12px; border-radius: 6px; margin-top: 10px; font-size: 12px; }
+  .point strong { color: #c55a00; }
+
+  .section-title { text-align: center; font-size: 13px; color: #666; padding: 12px 0 4px; font-weight: bold; letter-spacing: 1px; }
+
+  .card { background: white; margin: 10px 12px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; }
+  .card-header { background: #f8f9fa; padding: 10px 14px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+  .card-header .qnum { font-size: 11px; color: #888; }
+  .card-header .qtag { font-size: 11px; background: #2E75B6; color: white; border-radius: 10px; padding: 2px 8px; }
+  .card-body { padding: 14px; }
+  .question { font-size: 14px; line-height: 1.6; font-weight: bold; color: #1a1a2e; margin-bottom: 10px; }
+  .choices { list-style: none; }
+  .choices li { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; color: #333; }
+  .choices li:last-child { border-bottom: none; }
+
+  .btn-answer { width: calc(100% - 28px); margin: 0 14px 14px; padding: 10px; background: #2E75B6; color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+  .btn-answer:active { background: #1F3864; }
+
+  .answer-box { display: none; padding: 14px; background: #f8fffe; border-top: 2px solid #2E75B6; }
+  .answer-box.show { display: block; }
+  .correct { font-size: 15px; font-weight: bold; color: #c00000; margin-bottom: 10px; }
+  .exp-item { margin-bottom: 10px; }
+  .exp-item .choice-label { font-size: 12px; font-weight: bold; color: #555; }
+  .exp-item .mark-ok { color: #107c10; }
+  .exp-item .mark-ng { color: #c00000; }
+  .exp-item .exp-text { font-size: 12px; color: #444; line-height: 1.6; margin-top: 2px; }
+  .summary { background: #e8f0fe; border-radius: 8px; padding: 10px; margin-top: 10px; font-size: 12px; color: #1F3864; font-weight: bold; }
+
+  .progress { background: #e0e0e0; height: 6px; margin: 0 12px 12px; border-radius: 3px; }
+  .progress-bar { background: #2E75B6; height: 6px; border-radius: 3px; transition: width 0.3s; }
+  .progress-text { text-align: center; font-size: 11px; color: #888; margin-bottom: 8px; }
+
+  .footer { text-align: center; padding: 20px; font-size: 11px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>悪心・嘔吐　① 受容体・催吐リスク</h1>
+  <p>緩和医療学会 認定登録医試験対策</p>
+  <span class="badge">★★★ 超頻出（8年連続）　全7問</span>
+</div>
+
+<!-- 必須知識① -->
+<div class="knowledge-box">
+  <h2>📚 まず覚える：悪心の神経経路と受容体</h2>
+  <p>悪心・嘔吐は3つの経路から起こる。<strong>どの経路か→どの受容体か→どの制吐薬か</strong>という流れで覚える。</p>
+  <table class="k-table">
+    <tr><th>経路</th><th>主な受容体</th><th>代表的な原因</th></tr>
+    <tr><td><strong>CTZ</strong>（化学受容器引き金帯）</td><td>D2・5-HT3・NK1</td><td>オピオイド・抗がん剤・高Ca血症</td></tr>
+    <tr><td><strong>前庭系</strong>（内耳）</td><td>H1・Achm</td><td>体動・乗り物酔い</td></tr>
+    <tr><td><strong>消化管</strong></td><td>5-HT3・5-HT4・D2</td><td>腸管伸展・炎症・閉塞</td></tr>
+  </table>
+  <div class="point"><strong>⚠ ひっかけ注意：</strong>H1受容体はCTZではなく前庭系・嘔吐中枢が主。「CTZにH1」は誤り。</div>
+</div>
+
+<!-- 必須知識② -->
+<div class="knowledge-box">
+  <h2>📚 まず覚える：催吐リスク分類</h2>
+  <table class="k-table">
+    <tr><th>分類</th><th>頻度</th><th>代表的な抗がん剤</th></tr>
+    <tr><td><strong>高度</strong></td><td>90%以上</td><td>シスプラチン・ダカルバジン</td></tr>
+    <tr><td><strong>中等度</strong></td><td>30〜90%</td><td>パクリタキセル・オキサリプラチン</td></tr>
+    <tr><td><strong>低度</strong></td><td>10〜30%</td><td>ビンクリスチン</td></tr>
+    <tr><td><strong>最小度</strong></td><td>10%未満</td><td>ベバシズマブ</td></tr>
+  </table>
+  <div class="point"><strong>高度催吐性リスクの標準制吐レジメン：</strong>NK1拮抗薬＋オランザピン＋デキサメタゾン＋5-HT3拮抗薬</div>
+</div>
+
+<div class="section-title">── 問題を解いてみましょう ──</div>
+<div class="progress-text" id="progress-text">0 / 7 問完了</div>
+<div class="progress"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+
+<!-- Q1 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2017年 問20</span><span class="qtag">受容体</span></div>
+  <div class="card-body">
+    <div class="question">悪心の神経伝達に関与する受容体として適切なのはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. ドパミンD2受容体</li>
+      <li> B. インスリン受容体</li>
+      <li> C. ヒスタミンH1受容体</li>
+      <li> D. ニューロペプチドY受容体</li>
+      <li> E. 4型メラノコルチン受容体</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：A, C</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">CTZにはD2受容体が豊富。オピオイド・毒素・代謝異常が刺激する主要経路。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">インスリン受容体は悪心の神経伝達に関与しない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">H1受容体は前庭系・嘔吐中枢に存在。体動時の悪心・乗り物酔いに関与。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ニューロペプチドY受容体は食欲調節に関与するが悪心の主役ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">4型メラノコルチン受容体は食欲抑制に関与するが悪心とは異なる。</div></div>
+    <div class="summary">悪心に関与する主な受容体：D2（CTZ）・H1（前庭）・5-HT3（消化管・CTZ）・NK1（CTZ）</div>
+  </div>
+</div>
+
+<!-- Q2 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2023年 問A-24</span><span class="qtag">CTZ・受容体</span></div>
+  <div class="card-body">
+    <div class="question">延髄化学受容体引金帯（CTZ）に存在する受容体はどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> 1. アセチルコリン-ムスカリン Achm受容体</li>
+      <li> 2. アドレナリン α2受容体</li>
+      <li> 3. ドパミン D2受容体</li>
+      <li> 4. ニューロキニン NK1受容体</li>
+      <li> 5. ヒスタミン H1受容体</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：3, 4</div>
+    <div class="exp-item"><span class="choice-label"> 1. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">Achm受容体はCTZより嘔吐中枢・前庭系に多い。</div></div>
+    <div class="exp-item"><span class="choice-label"> 2. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">α2受容体はCTZには少なく、悪心の主経路ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> 3. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">D2受容体はCTZに豊富。オピオイド・毒素刺激の主要経路。</div></div>
+    <div class="exp-item"><span class="choice-label"> 4. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">NK1受容体もCTZに存在。遅発性嘔吐の主役。NK1拮抗薬（アプレピタント）の標的。</div></div>
+    <div class="exp-item"><span class="choice-label"> 5. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">H1受容体は前庭系・嘔吐中枢に多く、CTZへの分布は少ない。ここが頻出ひっかけ。</div></div>
+    <div class="summary">CTZの受容体：D2・5-HT3・NK1。H1は前庭系が主。</div>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2017年 問21</span><span class="qtag">原因と治療</span></div>
+  <div class="card-body">
+    <div class="question">悪心の原因と代表的治療法の組み合わせで正しいのはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. 胃内容の滞留 ― ヒスタミンH2拮抗薬</li>
+      <li> B. 頭蓋内圧上昇 ― セロトニン5-HT3拮抗薬</li>
+      <li> C. 不安 ― リラクゼーション</li>
+      <li> D. オピオイド ― 経鼻胃管による減圧</li>
+      <li> E. 体動に伴う悪心 ― ステロイド</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：A, C</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">学会公式解答。胃内容の滞留に対しH2拮抗薬が使われる文脈での出題。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">頭蓋内圧上昇→デキサメタゾン（ステロイド）が有効。5-HT3拮抗薬は化学療法・放射線による悪心に使用。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">不安・心理的原因による悪心にはリラクゼーション・ベンゾジアゼピン系が有効。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">オピオイドによる悪心→D2拮抗薬（ハロペリドール等）。経鼻胃管は腸閉塞時の減圧に使用。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">体動に伴う悪心（前庭刺激）→H1拮抗薬（ジフェンヒドラミン等）。ステロイドではない。</div></div>
+    <div class="summary">原因に合わせた制吐薬選択が基本。頭蓋内圧→ステロイド、体動→H1拮抗薬。</div>
+  </div>
+</div>
+
+<!-- Q4 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2017年 問58</span><span class="qtag">催吐リスク</span></div>
+  <div class="card-body">
+    <div class="question">高度催吐性リスクに分類される抗がん剤はどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. シスプラチン</li>
+      <li> B. ダカルバジン</li>
+      <li> C. パクリタキセル</li>
+      <li> D. ビンクリスチン</li>
+      <li> E. ベバシズマブ</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：A, B</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">シスプラチン＝高度催吐性リスクの代表。催吐頻度90%以上。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">ダカルバジンも高度催吐性リスク。悪性黒色腫などに使用。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">パクリタキセル＝中等度催吐性リスク（30〜90%）。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ビンクリスチン＝低度催吐性リスク（10〜30%）。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ベバシズマブ（分子標的薬）＝最小度催吐性リスク（10%未満）。</div></div>
+    <div class="summary">高度催吐性リスク：シスプラチン・ダカルバジン。パクリタキセルは中等度。</div>
+  </div>
+</div>
+
+<!-- Q5 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2021年 問A-45</span><span class="qtag">制吐薬・受容体</span></div>
+  <div class="card-body">
+    <div class="question">制吐薬について正しいのはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. メトクロプラミドは5-HT2受容体へ作用する。</li>
+      <li> B. プロクロルペラジンは5-HT3受容体へ作用する。</li>
+      <li> C. 5-HT3受容体拮抗薬は腸管運動抑制作用がある。</li>
+      <li> D. NK1受容体拮抗薬は化学療法後の遅発性嘔吐へ有効である。</li>
+      <li> E. D2受容体拮抗薬のがん患者の悪心嘔吐への有効性は系統的レビューで証明されている。</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：C, D</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">メトクロプラミドの主作用はD2拮抗（＋高用量で5-HT3拮抗・5-HT4作動）。5-HT2ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">プロクロルペラジンはD2・H1・Achm・α1Ad拮抗薬。5-HT3への作用は主ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">5-HT3拮抗薬（グラニセトロン等）は腸管運動を抑制するため便秘の副作用がある。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">NK1拮抗薬（アプレピタント等）は化学療法後24〜120時間の遅発性嘔吐に特に有効。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">D2拮抗薬の有効性は系統的レビューでは証明されていない。臨床的に広く使用されるが高いエビデンスはない。</div></div>
+    <div class="summary">5-HT3拮抗薬は便秘副作用あり。NK1拮抗薬は遅発性嘔吐に有効。</div>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2021年 問A-46</span><span class="qtag">悪心・嘔吐の知識</span></div>
+  <div class="card-body">
+    <div class="question">がん患者の悪心・嘔吐について正しいのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. 予期性嘔吐は、がん薬物療法開始前の患者にもみられる。</li>
+      <li> B. オピオイドを投与した患者の60%に悪心・嘔吐がみられる。</li>
+      <li> C. オランザピンは、化学療法後の遅発性嘔吐に対して有効である。</li>
+      <li> D. 化学受容体引金帯の刺激には、ヒスタミンH1受容体が関与する。</li>
+      <li> E. 薬物療法が原因の悪心・嘔吐は、前庭系が直接刺激を受けることで起こる。</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：C</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">予期性嘔吐は過去の化学療法の苦い記憶による条件反射。開始「前」の患者には起こらない。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">オピオイド投与患者の悪心・嘔吐の頻度は約30〜40%。60%は過大評価。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">オランザピン（MARTA）は多受容体を遮断し、遅発性嘔吐に対して有効性が確立されている。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">CTZの主な受容体はD2・5-HT3・NK1。H1はCTZへの分布が少なく前庭系が主。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">薬物療法による悪心はCTZへの直接刺激が主経路。前庭系は体動・乗り物酔いが主。</div></div>
+    <div class="summary">オランザピンは遅発性嘔吐に有効。CTZへH1は少ない。オピオイド悪心は約30〜40%。</div>
+  </div>
+</div>
+
+<!-- Q7 -->
+<div class="card">
+  <div class="card-header"><span class="qnum">2024年 問A-53</span><span class="qtag">催吐リスク・制吐療法</span></div>
+  <div class="card-body">
+    <div class="question">シスプラチン投与時の予防的制吐療法として用いられない薬剤はどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> 1. アプレピタント</li>
+      <li> 2. オランザピン</li>
+      <li> 3. デキサメタゾン</li>
+      <li> 4. パロノセトロン</li>
+      <li> 5. ミルタザピン</li>
+    </ul>
+  </div>
+  <button class="btn-answer" onclick="showAnswer(this)">答えを見る</button>
+  <div class="answer-box">
+    <div class="correct">正解：5</div>
+    <div class="exp-item"><span class="choice-label"> 1. <span class="mark-ng">❌ 誤り（使用される）</span></span><div class="exp-text">アプレピタント＝NK1拮抗薬。シスプラチンの標準制吐レジメンに含まれる。</div></div>
+    <div class="exp-item"><span class="choice-label"> 2. <span class="mark-ng">❌ 誤り（使用される）</span></span><div class="exp-text">オランザピン。多受容体遮断により高度催吐性リスク化学療法の予防・治療に使用。</div></div>
+    <div class="exp-item"><span class="choice-label"> 3. <span class="mark-ng">❌ 誤り（使用される）</span></span><div class="exp-text">デキサメタゾン＝ステロイド。急性・遅発性嘔吐の予防に標準的に使用。</div></div>
+    <div class="exp-item"><span class="choice-label"> 4. <span class="mark-ng">❌ 誤り（使用される）</span></span><div class="exp-text">パロノセトロン＝第2世代5-HT3拮抗薬。シスプラチンの標準制吐薬。</div></div>
+    <div class="exp-item"><span class="choice-label"> 5. <span class="mark-ok">✅ 正しい（用いられない）</span></span><div class="exp-text">ミルタザピンは抗うつ薬（NaSSA）であり、標準的な予防的制吐療法には含まれない。</div></div>
+    <div class="summary">シスプラチン標準制吐：NK1拮抗薬＋オランザピン＋デキサメタゾン＋5-HT3拮抗薬。ミルタザピンは含まれない。</div>
+  </div>
+</div>
+
+<div class="footer">全7問　お疲れ様でした 🎓<br>水曜の学習会でみんなで確認しましょう。</div>
+
+<script>
+let answered = 0;
+const total = 7;
+function showAnswer(btn) {
+  const card = btn.closest('.card');
+  const answerBox = card.querySelector('.answer-box');
+  answerBox.classList.add('show');
+  btn.style.display = 'none';
+  answered++;
+  document.getElementById('progress-text').textContent = answered + ' / ' + total + ' 問完了';
+  document.getElementById('progress-bar').style.width = (answered / total * 100) + '%';
+}
+</script>
+</body>
+</html>
