@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悪心・嘔吐 ③ 腸閉塞・終末期腹水</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0f4f8; color: #1a1a2e; font-size: 15px; }
+  .header { background: linear-gradient(135deg, #c00000, #7b0000); color: white; padding: 16px 20px; }
+  .header h1 { font-size: 18px; font-weight: bold; }
+  .header p { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+  .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 12px; padding: 2px 10px; font-size: 11px; margin-top: 6px; }
+  .knowledge-box { background: #fff; margin: 12px; border-radius: 12px; padding: 16px; border-left: 5px solid #c00000; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .knowledge-box h2 { font-size: 14px; color: #c00000; font-weight: bold; margin-bottom: 10px; }
+  .k-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  .k-table th { background: #c00000; color: white; padding: 6px 8px; text-align: left; }
+  .k-table td { padding: 6px 8px; border-bottom: 1px solid #e8e8e8; vertical-align: top; line-height: 1.6; }
+  .k-table tr:nth-child(even) td { background: #fff5f5; }
+  .ok { color: #107c10; font-weight: bold; }
+  .ng { color: #c00000; font-weight: bold; }
+  .point { background: #fff3e0; border-left: 4px solid #FF8C00; padding: 8px 12px; border-radius: 6px; margin-top: 10px; font-size: 12px; line-height: 1.6; }
+  .point strong { color: #c55a00; }
+  .danger-box { background: #ffe0e0; border: 2px solid #c00000; border-radius: 10px; padding: 14px; margin: 12px; font-size: 14px; font-weight: bold; color: #7b0000; text-align: center; line-height: 1.8; }
+  .section-title { text-align: center; font-size: 13px; color: #666; padding: 16px 0 4px; font-weight: bold; letter-spacing: 1px; }
+  .card { background: white; margin: 10px 12px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; }
+  .card-header { background: #c00000; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
+  .card-header .qnum { font-size: 12px; color: rgba(255,255,255,0.85); }
+  .card-header .qtag { font-size: 11px; background: rgba(255,255,255,0.25); color: white; border-radius: 10px; padding: 2px 8px; }
+  .card-body { padding: 14px; }
+  .question { font-size: 14px; line-height: 1.7; font-weight: bold; color: #1a1a2e; margin-bottom: 12px; }
+  .choices { list-style: none; }
+  .choices li { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f0f0f0; color: #333; line-height: 1.6; }
+  .choices li:last-child { border-bottom: none; }
+  .spacer { height: 32px; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 12px; letter-spacing: 2px; }
+  .answer-box { padding: 14px; background: #fff8f8; border-top: 3px solid #c00000; }
+  .correct { font-size: 16px; font-weight: bold; color: #c00000; margin-bottom: 12px; padding: 8px 12px; background: #ffe0e0; border-radius: 8px; }
+  .exp-item { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #f0d0d0; }
+  .exp-item:last-of-type { border-bottom: none; }
+  .choice-label { font-size: 13px; font-weight: bold; color: #333; }
+  .mark-ok { color: #107c10; }
+  .mark-ng { color: #c00000; }
+  .exp-text { font-size: 13px; color: #444; line-height: 1.7; margin-top: 4px; }
+  .summary { background: #fce8e8; border-radius: 8px; padding: 10px 12px; margin-top: 12px; font-size: 13px; color: #7b0000; font-weight: bold; line-height: 1.6; }
+  .divider { margin: 20px 12px; border: none; border-top: 2px dashed #ccc; }
+  .footer { text-align: center; padding: 24px 20px; font-size: 12px; color: #aaa; line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>悪心・嘔吐　③ 腸閉塞・終末期腹水</h1>
+  <p>緩和医療学会 認定登録医試験対策　月曜配信</p>
+  <span class="badge">★★★ 超頻出（8年連続）　全5問</span>
+</div>
+
+<div class="danger-box">
+  ⚠ 完全腸閉塞でメトクロプラミドは【絶対禁忌】<br>
+  2018・2019・2021年と3年連続出題。必ず覚える。
+</div>
+
+<div class="knowledge-box">
+  <h2>📚 まず覚える：完全腸閉塞への対応</h2>
+  <table class="k-table">
+    <tr><th>対応</th><th>可否・理由</th></tr>
+    <tr><td>経鼻胃管留置（減圧）</td><td><span class="ok">✅ 推奨</span>　腸管内容物を排出し苦痛を緩和</td></tr>
+    <tr><td>オクトレオチド投与</td><td><span class="ok">✅ 推奨</span>　消化管分泌を抑制し嘔吐・腹痛を緩和</td></tr>
+    <tr><td>デキサメタゾン投与</td><td><span class="ok">✅ 推奨</span>　腸管浮腫の軽減</td></tr>
+    <tr><td>ハロペリドール・フェンタニル</td><td><span class="ok">✅ 可</span>　腸管運動に影響しない</td></tr>
+    <tr><td>メトクロプラミド投与</td><td><span class="ng">❌ 絶対禁忌</span>　腸管運動亢進→内圧上昇→穿孔</td></tr>
+    <tr><td>下剤（ピコスルファート等）</td><td><span class="ng">❌ 禁忌</span>　同上</td></tr>
+    <tr><td>オピオイド中止</td><td><span class="ng">❌ 不要</span>　疼痛緩和のため継続する</td></tr>
+  </table>
+</div>
+
+<div class="knowledge-box">
+  <h2>📚 まず覚える：終末期腹水への対応</h2>
+  <table class="k-table">
+    <tr><th>対応</th><th>可否・理由</th></tr>
+    <tr><td>輸液の減量</td><td><span class="ok">✅ 第一選択</span>　過剰輸液が腹水を増悪させるため</td></tr>
+    <tr><td>腹腔穿刺（ドレナージ）</td><td><span class="ok">✅ 推奨</span>　腹部緊満・嘔吐の直接的緩和</td></tr>
+    <tr><td>アルブミン製剤投与</td><td><span class="ng">❌ 推奨されない</span>　終末期では根本的改善が望めない</td></tr>
+    <tr><td>高カロリー輸液への変更</td><td><span class="ng">❌ 推奨されない</span>　輸液量増加で腹水が悪化</td></tr>
+  </table>
+  <div class="point"><strong>2017年問19と2019年問21は同じテーマ。</strong>「輸液減量＋腹腔穿刺」が答え。</div>
+</div>
+
+<div class="section-title">── 問題 → スクロールして解答 ──</div>
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2018年 問36</span><span class="qtag">完全腸閉塞</span></div>
+  <div class="card-body">
+    <div class="question">完全な消化管閉塞（Niveau多発、排便ガスなし、緑色嘔吐）。考慮すべき治療はどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. 経鼻胃管留置</li>
+      <li> B. オピオイド投与中止</li>
+      <li> C. メトクロプラミド投与</li>
+      <li> D. 酢酸オクトレオチド投与</li>
+      <li> E. ピコスルファートナトリウム投与</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：A, D</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">経鼻胃管で腸管内容物・ガスを排出→腹部緊満・嘔吐を緩和。完全腸閉塞の減圧として推奨。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">疼痛緩和のためオピオイドは継続が必要。中止すると疼痛が増悪する。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">メトクロプラミドは腸管運動を亢進させる。完全腸閉塞では腸管内圧上昇→穿孔リスク。絶対禁忌。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">オクトレオチドはソマトスタチン類似体。消化管分泌を抑制し貯留液を減らして嘔吐・腹痛を緩和。完全腸閉塞の標準的薬物療法。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">ピコスルファート（下剤）は腸を動かす薬。完全閉塞では穿孔リスクがあり禁忌。</div></div>
+    <div class="summary">完全腸閉塞：「動かす薬・下剤」は禁忌。「減圧（胃管）＋分泌抑制（オクトレオチド）」が原則。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2019年 問32</span><span class="qtag">完全腸閉塞・禁忌</span></div>
+  <div class="card-body">
+    <div class="question">大腸がん。下腹部痛あり、最終排便4日前。完全閉塞疑いで腹痛増悪と便臭嘔吐あり。最も不適切な対応はどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. 経鼻胃管挿入</li>
+      <li> B. コルチコステロイド投与</li>
+      <li> C. ハロペリドール投与</li>
+      <li> D. ブチルスコポラミン投与</li>
+      <li> E. メトクロプラミド増量</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：E</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">経鼻胃管挿入による減圧は苦痛緩和に有効。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">コルチコステロイドは腸管浮腫を軽減し閉塞症状の緩和に使用される。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">ハロペリドールはD2拮抗薬として腸管運動に影響せず悪心・嘔吐の緩和に使用できる。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">ブチルスコポラミンは消化管の分泌を抑制し腸管内容物の貯留を減らして苦痛を緩和する。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ok">✅ 不適切（正答）</span></span><div class="exp-text">メトクロプラミドは消化管運動亢進薬。完全腸閉塞で「増量」すると腸管内圧がさらに上昇し穿孔のリスクが高まる。絶対禁忌。</div></div>
+    <div class="summary">完全腸閉塞でメトクロプラミドは絶対禁忌。3年連続出題の最重要ポイント。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2021年 問A-47</span><span class="qtag">完全腸閉塞・禁忌</span></div>
+  <div class="card-body">
+    <div class="question">胃癌術後の腹膜播種。悪心嘔吐・排便停止・腹痛あり。CTで小腸の著明拡張・複数閉塞あり（完全腸閉塞）。投与する薬剤で不適切なのはどれか。1つ選べ。</div>
+    <ul class="choices">
+      <li> A. オクトレオチド</li>
+      <li> B. デキサメタゾン</li>
+      <li> C. ハロペリドール</li>
+      <li> D. フェンタニル</li>
+      <li> E. メトクロプラミド</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：E</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">オクトレオチドは消化管分泌を抑制し嘔吐・腹痛を緩和。完全腸閉塞の標準的薬物療法。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">デキサメタゾンは腸管浮腫を軽減し閉塞の改善を期待できる。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">ハロペリドールはD2拮抗薬として腸管運動に影響せず制吐効果を発揮できる。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌（適切）</span></span><div class="exp-text">フェンタニルは疼痛緩和のため継続する。オピオイドを中止すると疼痛が増悪する。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ok">✅ 不適切（正答）</span></span><div class="exp-text">メトクロプラミドは消化管運動亢進薬。完全腸閉塞では腸管穿孔のリスクがあり【絶対禁忌】。2018年・2019年と同じポイント。</div></div>
+    <div class="summary">メトクロプラミド禁忌は完全腸閉塞の最重要ポイント。3年連続出題を確認。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2017年 問19</span><span class="qtag">終末期腹水</span></div>
+  <div class="card-body">
+    <div class="question">72歳女性。胃がん腹膜播腫、PS3。中カロリー輸液（1日1500ml）施行中。1週間後、下半身浮腫・腹部緊満が顕著となり利尿薬開始。食後に嘔吐。CTで著明な腹水あり、消化管閉塞なし。緩和ケアチームとして推奨すべきものはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. 輸液の減量</li>
+      <li> B. 利尿薬の中止</li>
+      <li> C. 腹水の腹腔穿刺</li>
+      <li> D. アルブミン製剤の投与</li>
+      <li> E. 高カロリー輸液へ変更</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：A, C</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">終末期の過剰輸液が腹水を増悪させている可能性が高い。まず輸液を減量することが第一選択。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">利尿薬の中止は選択肢だが「積極的に推奨すべき介入」ではない。直接の症状改善につながらない。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">腹部緊満・嘔吐の苦痛が強い場合、腹腔穿刺で腹水を直接除去することが症状緩和に有効。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">終末期の低アルブミン性腹水にアルブミン製剤を投与しても根本的改善は期待できない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">高カロリー輸液への変更は輸液量の増加につながり腹水・浮腫をさらに悪化させる。</div></div>
+    <div class="summary">終末期腹水の対応：輸液減量＋腹腔穿刺。アルブミン・高カロリー輸液は推奨しない。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="card">
+  <div class="card-header"><span class="qnum">2019年 問21</span><span class="qtag">終末期腹水</span></div>
+  <div class="card-body">
+    <div class="question">胃がん腹膜播種。終末期に中カロリー輸液施行中で、腹水著明・浮腫・嘔吐が出現。推奨されるものはどれか。2つ選べ。</div>
+    <ul class="choices">
+      <li> A. 腹腔穿刺</li>
+      <li> B. 輸液の減量</li>
+      <li> C. 利尿薬の中止</li>
+      <li> D. アルブミン製剤の投与</li>
+      <li> E. 高カロリー輸液へ変更</li>
+    </ul>
+  </div>
+  <div class="spacer">↓ スクロールして解答を見る ↓</div>
+  <div class="answer-box">
+    <div class="correct">✅ 正解：A, B</div>
+    <div class="exp-item"><span class="choice-label"> A. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">腹部緊満・嘔吐の苦痛緩和のため腹腔穿刺で腹水を除去することが推奨される。</div></div>
+    <div class="exp-item"><span class="choice-label"> B. <span class="mark-ok">✅ 正しい</span></span><div class="exp-text">終末期の過剰輸液は腹水を増悪させるため輸液を減量することが基本。2017年問19と同じポイント。</div></div>
+    <div class="exp-item"><span class="choice-label"> C. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">利尿薬の中止は選択肢だが積極的な推奨介入ではない。</div></div>
+    <div class="exp-item"><span class="choice-label"> D. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">終末期の腹水にアルブミン製剤投与は根本的改善が望めず推奨されない。</div></div>
+    <div class="exp-item"><span class="choice-label"> E. <span class="mark-ng">❌ 誤り</span></span><div class="exp-text">高カロリー輸液への変更は輸液量増加で腹水・浮腫をさらに悪化させる。</div></div>
+    <div class="summary">終末期腹水：輸液減量＋腹腔穿刺。2017年・2019年の同テーマで繰り返し出題。</div>
+  </div>
+</div>
+
+<div class="footer">全5問　お疲れ様でした 🎓<br>明日の水曜学習会でみんなで確認しましょう！<br>20問すべての振り返りをします。</div>
+</body>
+</html>
