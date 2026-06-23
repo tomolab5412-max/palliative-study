@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>緩和医療学会 認定登録医試験対策</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0f4f8; color: #1a1a2e; }
+
+  .header { background: linear-gradient(135deg, #1F3864, #2E75B6); color: white; padding: 24px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; }
+  .header p { font-size: 13px; opacity: 0.85; }
+  .header .sub { font-size: 12px; margin-top: 8px; opacity: 0.7; }
+
+  .stats { display: flex; justify-content: center; gap: 20px; padding: 16px; }
+  .stat-box { background: white; border-radius: 12px; padding: 12px 20px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); min-width: 80px; }
+  .stat-box .num { font-size: 24px; font-weight: bold; color: #2E75B6; }
+  .stat-box .label { font-size: 11px; color: #888; margin-top: 2px; }
+
+  .phase { margin: 8px 12px; }
+  .phase-header { padding: 10px 14px; border-radius: 10px 10px 0 0; font-weight: bold; font-size: 14px; color: white; display: flex; justify-content: space-between; align-items: center; }
+  .phase-body { background: white; border-radius: 0 0 10px 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 16px; }
+
+  .theme-item { display: flex; align-items: center; padding: 12px 14px; border-bottom: 1px solid #f0f0f0; text-decoration: none; color: #1a1a2e; transition: background 0.15s; }
+  .theme-item:last-child { border-bottom: none; }
+  .theme-item:hover { background: #f5f9ff; }
+  .theme-item.disabled { opacity: 0.45; pointer-events: none; }
+
+  .num-badge { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; color: white; flex-shrink: 0; margin-right: 12px; }
+  .theme-info { flex: 1; }
+  .theme-name { font-size: 13px; font-weight: bold; line-height: 1.4; }
+  .theme-meta { font-size: 11px; color: #888; margin-top: 2px; }
+  .theme-status { font-size: 11px; margin-left: 8px; flex-shrink: 0; }
+  .status-ready { background: #e8f5e9; color: #2e7d32; border-radius: 8px; padding: 2px 8px; font-weight: bold; }
+  .status-soon { background: #fff3e0; color: #e65100; border-radius: 8px; padding: 2px 8px; }
+  .status-planned { background: #f5f5f5; color: #aaa; border-radius: 8px; padding: 2px 8px; }
+
+  .arrow { color: #ccc; font-size: 16px; margin-left: 6px; }
+  .arrow.active { color: #2E75B6; }
+
+  .footer { text-align: center; padding: 24px 20px; font-size: 11px; color: #aaa; line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>緩和医療学会<br>認定登録医試験対策</h1>
+  <p>過去問410問　95テーマ　頻出度順学習</p>
+  <div class="sub">powered by はるたか会 × TOMO Lab</div>
+</div>
+
+<div class="stats">
+  <div class="stat-box"><div class="num">95</div><div class="label">テーマ</div></div>
+  <div class="stat-box"><div class="num">410</div><div class="label">問題数</div></div>
+  <div class="stat-box"><div class="num">1</div><div class="label">完成済み</div></div>
+</div>
+
+<!-- フェーズ1 -->
+<div class="phase">
+  <div class="phase-header" style="background: #c00000;">
+    <span>🔴 フェーズ1　最優先（7〜8年連続出題）</span>
+    <span style="font-size:12px; opacity:0.85;">6テーマ・60問</span>
+  </div>
+  <div class="phase-body">
+
+    <a href="01_悪心嘔吐/index.html" class="theme-item">
+      <div class="num-badge" style="background:#c00000;">01</div>
+      <div class="theme-info">
+        <div class="theme-name">悪心・嘔吐・制吐薬</div>
+        <div class="theme-meta">★★★（8年連続）　20問　R05</div>
+      </div>
+      <span class="theme-status status-ready">✅ 学習開始</span>
+      <span class="arrow active">›</span>
+    </a>
+
+    <a href="#" class="theme-item disabled">
+      <div class="num-badge" style="background:#e0a0a0;">02</div>
+      <div class="theme-info">
+        <div class="theme-name">抑うつ・適応障害</div>
+        <div class="theme-meta">★★★（7年連続）　13問　R06</div>
+      </div>
+      <span class="theme-status status-soon">🔜 準備中</span>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="#" class="theme-item disabled">
+      <div class="num-badge" style="background:#e0a0a0;">03</div>
+      <div class="theme-info">
+        <div class="theme-name">家族・遺族ケア</div>
+        <div class="theme-meta">★★★（7年連続）　12問　R10</div>
+      </div>
+      <span class="theme-status status-soon">🔜 準備中</span>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="#" class="theme-item disabled">
+      <div class="num-badge" style="background:#e0a0a0;">04</div>
+      <div class="theme-info">
+        <div class="theme-name">呼吸困難（薬物療法・総論）</div>
+        <div class="theme-meta">★★★（7年連続）　10問　R04</div>
+      </div>
+      <span class="theme-status status-soon">🔜 準備中</span>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="#" class="theme-item disabled">
+      <div class="num-badge" style="background:#e0a0a0;">05</div>
+      <div class="theme-info">
+        <div class="theme-name">高カルシウム血症</div>
+        <div class="theme-meta">★★★（7年連続）　9問　S20</div>
+      </div>
+      <span class="theme-status status-soon">🔜 準備中</span>
+      <span class="arrow">›</span>
+    </a>
+
+    <a href="#" class="theme-item disabled">
+      <div class="num-badge" style="background:#e0a0a0;">06</div>
+      <div class="theme-info">
+        <div class="theme-name">心不全・COPD（非がん疾患）</div>
+        <div class="theme-meta">★★★（7年連続）　8問　S10</div>
+      </div>
+      <span class="theme-status status-soon">🔜 準備中</span>
+      <span class="arrow">›</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- フェーズ2 -->
+<div class="phase">
+  <div class="phase-header" style="background: #C55A11;">
+    <span>🟠 フェーズ2　超頻出A（6年連続出題）</span>
+    <span style="font-size:12px; opacity:0.85;">5テーマ・40問</span>
+  </div>
+  <div class="phase-body">
+    <div class="theme-item disabled">
+      <div class="num-badge" style="background:#C55A11;">07</div>
+      <div class="theme-info"><div class="theme-name">鎮静（Palliative Sedation）</div><div class="theme-meta">★★★（6年連続）　10問　R10</div></div>
+      <span class="theme-status status-planned">予定</span><span class="arrow">›</span>
+    </div>
+    <div class="theme-item disabled">
+      <div class="num-badge" style="background:#C55A11;">08</div>
+      <div class="theme-info"><div class="theme-name">便秘・下剤</div><div class="theme-meta">★★★（6年連続）　9問　R05</div></div>
+      <span class="theme-status status-planned">予定</span><span class="arrow">›</span>
+    </div>
+    <div class="theme-item disabled">
+      <div class="num-badge" style="background:#C55A11;">09</div>
+      <div class="theme-info"><div class="theme-name">予後予測ツール（PPI・PPS・GPA）</div><div class="theme-meta">★★★（6年連続）　8問　R02</div></div>
+      <span class="theme-status status-planned">予定</span><span class="arrow">›</span>
+    </div>
+    <div class="theme-item disabled">
+      <div class="num-badge" style="background:#C55A11;">10</div>
+      <div class="theme-info"><div class="theme-name">腸閉塞（オクトレオチド）</div><div class="theme-meta">★★★（6年連続）　7問　R05</div></div>
+      <span class="theme-status status-planned">予定</span><span class="arrow">›</span>
+    </div>
+    <div class="theme-item disabled">
+      <div class="num-badge" style="background:#C55A11;">11</div>
+      <div class="theme-info"><div class="theme-name">小児緩和ケア</div><div class="theme-meta">★★★（6年連続）　6問　S10</div></div>
+      <span class="theme-status status-planned">予定</span><span class="arrow">›</span>
+    </div>
+  </div>
+</div>
+
+<!-- フェーズ3〜6（まとめて表示） -->
+<div class="phase">
+  <div class="phase-header" style="background: #806000;">
+    <span>🟡 フェーズ3　超頻出B（5年連続出題）</span>
+    <span style="font-size:12px; opacity:0.85;">8テーマ・52問</span>
+  </div>
+  <div class="phase-body">
+    <div class="theme-item disabled"><div class="num-badge" style="background:#806000;">12</div><div class="theme-info"><div class="theme-name">脳転移・脊髄圧迫・神経合併症</div><div class="theme-meta">★★★（5年連続）　10問　S20</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+    <div class="theme-item disabled"><div class="num-badge" style="background:#806000;">13</div><div class="theme-info"><div class="theme-name">心理的反応・防衛機制</div><div class="theme-meta">★★★（5年連続）　9問　R06</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+    <div class="theme-item disabled"><div class="num-badge" style="background:#806000;">14</div><div class="theme-info"><div class="theme-name">オピオイド薬物動態・代謝（CYP）</div><div class="theme-meta">★★★（5年連続）　8問　R03(2)</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+    <div class="theme-item disabled"><div class="num-badge" style="background:#806000;">15〜19</div><div class="theme-info"><div class="theme-name">咳嗽・せん妄・心血管系合併症・メサドン・リンパ浮腫</div><div class="theme-meta">★★★（5年連続）　各5〜7問</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header" style="background: #375623;">
+    <span>🟢 フェーズ4　超頻出C（4年連続出題）</span>
+    <span style="font-size:12px; opacity:0.85;">18テーマ・121問</span>
+  </div>
+  <div class="phase-body">
+    <div class="theme-item disabled"><div class="num-badge" style="background:#375623;">20</div><div class="theme-info"><div class="theme-name">ACP・意思決定支援</div><div class="theme-meta">★★★（4年連続）　11問　R10</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+    <div class="theme-item disabled"><div class="num-badge" style="background:#375623;">21〜37</div><div class="theme-info"><div class="theme-name">骨転移放射線・看取り・研究方法論・CRF・在宅ケア 他</div><div class="theme-meta">★★★（4年連続）　各4〜9問</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header" style="background: #1F4E79;">
+    <span>🔵 フェーズ5　頻出（3年出題）</span>
+    <span style="font-size:12px; opacity:0.85;">16テーマ・60問</span>
+  </div>
+  <div class="phase-body">
+    <div class="theme-item disabled"><div class="num-badge" style="background:#1F4E79;">38〜54</div><div class="theme-info"><div class="theme-name">腹水・悪液質・全人的苦痛・睡眠障害・吃逆 他</div><div class="theme-meta">★★（3年出題）　各3〜5問</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header" style="background: #595959;">
+    <span>⚪ フェーズ6　注意以下（2年以下）</span>
+    <span style="font-size:12px; opacity:0.85;">41テーマ・77問</span>
+  </div>
+  <div class="phase-body">
+    <div class="theme-item disabled"><div class="num-badge" style="background:#595959;">55〜95</div><div class="theme-info"><div class="theme-name">黄疸・口渇・介護保険・神経ブロック 他</div><div class="theme-meta">★以下　各1〜4問</div></div><span class="theme-status status-planned">予定</span><span class="arrow">›</span></div>
+  </div>
+</div>
+
+<div class="footer">
+  緩和医療学会 認定登録医試験対策<br>
+  はるたか会 × TOMO Lab<br>
+  © 2025 All rights reserved.
+</div>
+
+</body>
+</html>
